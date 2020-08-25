@@ -53,40 +53,64 @@
         </div>
         <!------------------------------ navbar -------------------------------->
 
-        <div class="row justify-content-center my-3 mx-3">
-            <div class="col-md-7 bg-white mx-1 my-1">
-                <h1 class="text-info my-3">Summary: Latitude vs. X</h1>
-                <hr>
-                <p>
-                    The purpose of this project was to analyze how weather changes as you get closer to the equator. To
-                    accompolish analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over
-                    500
-                    cities.
-                </p>
-                <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.
-                    Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides
-                    the
-                    source data and visualizations created as part of the analysis, as well as explanations and
-                    descriptions
-                    of any trends and correlations witnessed.</p>
-            </div>
-            <div class="col-md-4 bg-white mx-1 my-1">
-                <h1 class="text-info my-3">Visualizations</h1>
+        <div class="row">
+            <div class="col bg-white mx-1 my-1">
+                <h1 class="text-info my-3 text-center">Visualizations</h1>
                 <hr>
                 <div class="row pb-5">
-                    <div class="col-lg-6">
-                        <img src="Images\max_temp_vs.latitude.png" alt="Max temperature versus latitude">
-                        <img src="Images\humidity_vs_latitude.png" alt="Humidity versus latitude">
-                    </div>
-                    <div class="col-lg-6">
-                        <img src="Images\latitude_vs_cloudiness.png" alt="Cloudiness versus latitude">
-                        <img src="Images\wind_speed_vs_latitude.png" alt="Wind speed versus latitude">
+                    <div class="col-md-6">
+                        <!-- CARD 1 -->
+                        <div class="card border-0">
+                            <a href="visualizations/max-temp.html"><img class="card-img-top" src="Images\max_temp_vs.latitude.png"
+                                alt="Max temperature versus latitude"></a>
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Max Temperature vs. Latitude</h5>
+                                <p class="card-text">Here is an visualization that shows the increase in temperature as
+                                    you get closer to the equator (or 0 degrees latitude). It also shows show how you
+                                    get closer to the north pole (100 degrees latitude), the max temperature decreases.
+                                </p>
+                            </div>
 
+                        </div>
+                        <!-- CARD 2 -->
+                        <div class="card border-0">
+                            <a href="visualizations/humidity.html"><img class="card-img-top" src="Images\humidity_vs_latitude.png" alt="Humidity versus Latitude">></a>
+                                
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Humidity versus Latitude</h5>
+                                <p class="card-text">Here is another scatter plot of humidity levels at the different
+                                    cities graphed based on their latitude.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+                        <!-- CARD 3 -->
+                        <div class="card border-0">
+                            <a href="visualizations/cloudiness.html"><img src="Images\latitude_vs_cloudiness.png" alt="Cloudiness versus latitude"></a>
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Cloudiness versus Latitude</h5>
+                                <p class="card-text">Here is a visualization of the cloudiness versus the city's
+                                    latitude.</p>
+                            </div>
+
+                        </div>
+                        <!-- CARD 4 -->
+                        <div class="card border-0">
+                            <a href="visualizations/wind-speed.html"><img src="Images\wind_speed_vs_latitude.png" alt="Wind speed versus latitude"></a>
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Wind Speed versus Latitude</h5>
+                                <p class="card-text">And, the last visualization of the wind speed versus the city's
+                                    latitude.</p>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
-
             </div>
         </div>
+    </div>
 
 
     </div>
